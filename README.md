@@ -1,6 +1,6 @@
 # Video Game Analysis with SQL
 
-This project conducts analysis on video game data, emphasizing user scores, developers, and release years. The dataset used in this analysis contains information about various video games, including user ratings, developers, release years, and other relevant details.
+This project conducts analysis on video game data, emphasizing user scores, developers, geners and release years. The dataset used in this analysis contains information about various video games, including user ratings, developers, release years, and other relevant details.
 
 ## Overview
 
