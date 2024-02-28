@@ -6,25 +6,32 @@ This project conducts analysis on video game data, emphasizing user scores, deve
 
 The objective of this project is to gain insights into the video game industry by performing SQL-based analyses on user scores, developers, and release years. By querying the dataset, we aim to identify trends, patterns, and correlations that can provide valuable information for game developers, publishers, and enthusiasts.
 
-### Queries
+### Queries Included
 
-Explore various SQL queries that focus on user scores, developers, and release years, including
+##### Imputing Null Values: Code for handling null values in key columns such as Product_Rating, User_Score, and User_Ratings_Count.
 
-Top 10 Games with Highest user Rating overall
+##### Creating Product Rating Code: Introduces a new column, Product_Rating_Code, based on a mapping of Product_Rating values.
 
-Games with the Highest user rating each year
+##### Top 10 Games with Highest User Rating Overall: Retrieves the top 10 games based on user ratings.
 
-Games with the Highest user score in each genre
+##### Games with Highest User Score in Every Year with Genre: Identifies the highest-rated game in each year along with its genre.
 
-Games with the highest user score in each genre every year
+##### Games with Highest User Score in Each Genre: Finds the highest-rated game in each genre.
 
-Highest rating games from each developer
+##### Highest Rating Games from Each Developer: Lists games from each developer with a user score of 8 or higher.
 
-The number of games each developer has with a user score of 8 or higher
+##### Number of Games Each Developer has with User Score of 8 or Higher: Provides a count of games with a user score of 8 or higher for each developer.
 
-The highest-rated game by each developer each year
+##### Highest-Rated Game by Each Developer Each Year: Presents the highest-rated game by each developer in each year.
 
-Number of titles in each genre with a user score of 8 or higher.
+##### Number of Titles in Each Genre with User Score of 8 or Higher: Counts titles in each genre with a user score of 8 or higher.
+
+##### User-Defined Function (UDF) for Top 10 Games by Genre: Demonstrates the creation of a UDF to fetch the top 10 games for a specified genre.
+
+##### Average User Score by Genre: Calculates the average user score and the number of games for each combination of genre and product rating.
 
 ### Data Source
-https://www.kaggle.com/datasets/beridzeg45/video-games
+
+The dataset used in this project is sourced from (https://www.kaggle.com/datasets/beridzeg45/video-games
+)
+
