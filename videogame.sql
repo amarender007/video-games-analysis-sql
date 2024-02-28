@@ -26,7 +26,7 @@ where rank = 1
 
 
 
---Games with highest user score in each genre every year
+--Games with the highest user score in  every year with genre
 with highest_reating(rank,title, [year], user_score,genres)
 as(
 select rank() over(partition by year(release_date) order by user_score desc) as rank,
@@ -64,3 +64,20 @@ select Genres,count(title) as [count] from all_video_games
 where User_Score >= 8 and Genres is not null
 group by Genres
 order by [count] desc
+
+-- Creating a UDF for top 10 games by genre
+
+/* Fetching all the genres in the database*/
+select distinct Genres from all_video_games
+
+CREATE FUNCTION top_10_games_by_genre
+(@genre nvarchar(50))
+Returns Table
+Return
+(
+select top 10 title,YEAR(release_date)[Year],Developer,Genres,User_Score from all_video_games
+where Genres = @genre 
+order by User_Score desc
+)
+ --Fetching top 10 games from Genre 'FPS'
+select * from top_10_games_by_genre('FPS')
