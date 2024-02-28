@@ -81,3 +81,11 @@ order by User_Score desc
 )
  --Fetching top 10 games from Genre 'FPS'
 select * from top_10_games_by_genre('FPS')
+
+
+--Average user score by genre
+ 
+select Genres,Product_Rating,avg(user_score) as Avg_Score,count(title) as No_of_Games from all_video_games
+group by Genres,Product_Rating
+order by avg_score desc
+
