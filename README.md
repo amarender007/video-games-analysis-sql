@@ -22,6 +22,7 @@ The objective of this project is to gain insights into the video game industry b
 
 ##### Number of Games Each Developer has with User Score of 8 or Higher: Provides a count of games with a user score of 8 or higher for each developer.
 
+
 ##### Highest-Rated Game by Each Developer Each Year: Presents the highest-rated game by each developer in each year.
 
 ##### Number of Titles in Each Genre with User Score of 8 or Higher: Counts titles in each genre with a user score of 8 or higher.
